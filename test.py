@@ -74,4 +74,5 @@ disp_Color= cv2.applyColorMap(dispC,cv2.COLORMAP_OCEAN)         # Change the Col
 filt_Color= cv2.applyColorMap(filteredImg,cv2.COLORMAP_OCEAN)
 
 cv2.imshow('Filtered Color Depth',filt_Color)
+cv2.setMouseCallback("Filtered Color Depth",coords_mouse_disp,filt_Color)
 cv2.waitKey(10000)
